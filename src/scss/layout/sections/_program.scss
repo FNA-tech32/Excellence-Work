@@ -1,0 +1,49 @@
+#programs {
+    .nav {
+        flex-wrap: nowrap;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        &.active {
+            font-weight: bold;
+        }
+    }
+    .program {
+        animation-duration: 0.15s;
+        animation-timing-function: ease;
+        animation-fill-mode: none;
+        &.show {
+            animation-name: showFadin;
+        }
+        &.hide {
+            display: none;
+            animation-name: hideFadin;
+        }
+    }
+}
+
+@keyframes showFadin {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    1% {
+        display: block;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hideFadin {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        display: none;
+    }
+}

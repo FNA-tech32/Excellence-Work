@@ -1,0 +1,20 @@
+{
+  "name": "exccellence-work",
+  "version": "1.0.0",
+  "description": "Exccellence Work personal development coaching website",
+  "main": "index.html",
+  "scripts": {
+    "build": "node init && webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antoine Bollinger",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "dotenv-webpack": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "leaflet-gesture-handling": "^1.2.2",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1"
+  }
+}
