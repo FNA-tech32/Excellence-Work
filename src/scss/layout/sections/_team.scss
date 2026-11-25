@@ -1,0 +1,15 @@
+#team {
+    .team-member {
+        margin-bottom: 3rem;
+        text-align: center;
+        .team-portrait {
+            width: 14rem;
+            height: 14rem;
+            border: 0.5rem solid var(--bs-primary);
+        }
+        h3, .h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+    }
+}

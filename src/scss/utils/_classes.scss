@@ -1,0 +1,77 @@
+// Overwriting classes
+@mixin shadow {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px !important;
+}
+
+.shadow {
+    @include shadow;
+}
+
+.bg-primary-2 {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-2-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-tertary-1 {
+    --bs-bg-opacity: 0.05;
+    background-color: rgba(var(--bs-tertary-1-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-tertary-2 {
+    --bs-bg-opacity: 0.05;
+    background-color: rgba(var(--bs-tertary-2-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.text-primary-2 {
+    --bs-bg-opacity: 1;
+    color: rgba(var(--bs-primary-2-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.text-tertary-1 {
+    --bs-bg-opacity: 1;
+    color: rgba(var(--bs-tertary-1-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.text-tertary-2 {
+    --bs-bg-opacity: 1;
+    color: rgba(var(--bs-tertary-2-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.btn-primary-2 {
+    color: #fff;
+    background-color: rgba(var(--bs-primary-rgb), 0.9);
+    border-color: rgba(var(--bs-primary-rgb), 0.9);
+    &:hover {
+        color: var(--bs-secondary);
+        background-color: rgba(var(--bs-primary-rgb), 1);
+        border-color: rgba(var(--bs-primary-rgb), 1);
+    }
+}
+
+.btn-tertary-1 {
+    color: #fff;
+    background-color: rgba(var(--bs-tertary-1-rgb), 0.9);
+    border-color: rgba(var(--bs-tertary-1-rgb), 0.9);
+    &:hover {
+        color: var(--bs-secondary);
+        background-color: rgba(var(--bs-tertary-1-rgb), 1);
+        border-color: rgba(var(--bs-tertary-1-rgb), 1);
+    }
+}
+
+.btn-tertary-2 {
+    color: #fff;
+    background-color: rgba(var(--bs-tertary-2-rgb), 0.9);
+    border-color: rgba(var(--bs-tertary-2-rgb), 0.9);
+    &:hover {
+        color: var(--bs-secondary);
+        background-color: rgba(var(--bs-tertary-2-rgb), 1);
+        border-color: rgba(var(--bs-tertary-2-rgb), 1);
+    }
+}
+
+.textNoWrap {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;      
+}
